@@ -9,40 +9,37 @@ using namespace std;
 int main() {
     int n=5;
     cin >> n;
-    vector< pair<int, int>, n> v;
+    vector< pair<int, int>> v;
     int a, b;
     
     for(int i=0; i<n; i++){
         cin >> a >> b;
-       vector_.push_back( make_pair(a,b) ); 
+       v.push_back( make_pair(a,b) ); 
     }
 
-   
-    // for(int i=0; i<n; i++){
-    //     cout << a[i] << " ";
-    //     // cout << a[i].first << " " << a[i].second << endl;
-    // }
+    cout << "\nPart (a)" << endl;
+    int c1=0;
 
-    //     int flag = 0;
+    for(int i=0; i<n-1; i++){
+        if(v[i].first < v[i+1].first && v[i].second > v[i+1].second){
+            cout << "{(" << v[i].first << "," << v[i].second << "), (" << v[i+1].first << "," << v[i+1].second << ")}";
+            cout << endl;
+            c1++; 
+        }
+    }
+    cout << "total number of pairs : " << c1 << endl;
 
-//     for (int i=0; i<n; i++) 
-//     { 
-//         // "first" and "second" are used to access 
-//         // 1st and 2nd element of pair respectively 
-//         cout << v[i].first << " "
-//              << v[i].second << endl; 
-//     }
+    cout << "\nPart (b)" << endl;
+    int c2=0;
 
-    // for(int i=0; i<n; i++){
-    //     for(int j=0; j<n; j++){
-    //         if(i==j){
-    //             continue;
-    //         }
-    //         if(a[i].first < a[j].first && a[i].second > a[j].second){
-    //             cout << a[i]
-    //         }
-    //     }
-    // }
+    for(int i=0; i<n; i++){
+        if(v[i].first > v[i+1].first && v[i].second < v[i+1].second){
+            cout << "{(" << v[i].first << "," << v[i].second << "), (" << v[i+1].first << "," << v[i+1].second << ")}";
+            cout << endl;
+            c2++; 
+        }
+    }
+    cout << "total number of pairs : " << c2;
 
     return 0;
 }

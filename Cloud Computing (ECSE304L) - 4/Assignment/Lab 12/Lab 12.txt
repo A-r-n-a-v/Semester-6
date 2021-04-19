@@ -1,0 +1,40 @@
+Lab Assignment 12
+Creation of Relational Database System using AWS RDS service and connect the Database using MySQL on the cloud. Then import/create the database SQL script and write SQL queries.
+
+ 
+
+Lab Introduction:
+
+The Amazon Relational Database Service (RDS AWS) is a web service that makes it easier to set up, operate, and scale a relational database in the cloud. It provides cost-efficient, resizable capacity in an industry-standard relational database and manages common database administration tasks.
+
+MySQL is the world's most popular open-source relational database and Amazon RDS makes it easy to set up, operate, and scale MySQL deployments in the cloud. With Amazon RDS, you can deploy scalable MySQL servers in minutes with cost-efficient and resizable hardware capacity.
+
+Amazon RDS for MySQL frees you up to focus on application development by managing time-consuming database administration tasks including backups, software patching, monitoring, scaling and replication.
+
+Amazon RDS supports MySQL Community Edition versions 5.5, 5.6, 5.7, and 8.0 which means that the code, applications, and tools you already use today can be used with Amazon RDS.
+
+Lab Activities:
+
+1. Go to the AWS management console.
+
+2. Understanding Amazon RDS
+
+3. Create the RDS database by using the RDS AWS service.
+
+4. Setting up Amazon RDS for first-time use
+
+5. Understanding Amazon RDS DB instances
+
+6. Creating a DB instance for production
+
+7. Managing security for your DB instance
+
+8. Connecting to your DB instance using MySql Workbench and command line
+
+10. Create/import the HR database as attached to the file.
+
+11. Monitoring a MySQL DB instance
+
+12. Execute a few of SQL queries and again monitor the database performance.
+
+13. Take the snapshot and create a doc/pdf of your enrolment number_lab12

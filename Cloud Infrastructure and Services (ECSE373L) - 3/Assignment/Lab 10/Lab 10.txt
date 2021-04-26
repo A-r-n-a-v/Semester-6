@@ -1,0 +1,11 @@
+Objective: Understanding of AWS IAM service and Creation of custom IAM Policies
+
+1. Enable an access key ID and secret access key for the AWS API, CLI, and SDK 2. AWS Management Console Access: Enable a password that allows users to sign in to the Management Console.
+
+3. Policy: JSON document, that contains a set of permission on the AWS account.
+
+4. Create a User with “Administrator Access” Deny IAM Access
+
+5. Switch to IAM user: Verify access on the IAM dashboard
+
+ 6. Take the snapshots of all performed tasks and create a doc/pdf of your enrolment number_lab10(Ex: E18CSE072_Lab10) and upload the file on LMS.

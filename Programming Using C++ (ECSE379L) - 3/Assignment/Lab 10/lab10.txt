@@ -1,0 +1,17 @@
+[1]
+
+Calculate Area and Cost of Painting
+Write a C++ program using Multiple inheritance, to calculate the area of a rectangle whose height and length should be taken as input variables. Also calaute the cost of painting, if the unit square area is painted in "z".
+
+Note:- Create two base classes  (one for shape and one for paint cost) and a drive class for calculating the area.
+
+
+
+
+
+
+[2]
+
+Write a C++ program using hybrid inheritance, to calculate the square and cube of  numbers, where numbers are taken as input variable.
+
+Note:- Create one base class to input the number and two drive classes for calculating the square and cube.

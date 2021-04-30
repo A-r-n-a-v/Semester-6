@@ -36,10 +36,10 @@ class Rectangle: public Shape, public PaintCost {
 int main(void) {
    Rectangle Rect;
    int area;
- int x,y,z; 
- cin >> x;
- cin >> y;
- cin >> z;   
+   int x,y,z; 
+   cin >> x;
+   cin >> y;
+   cin >> z;   
    Rect.setWidth(x);
    Rect.setHeight(y);
 

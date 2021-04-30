@@ -1,0 +1,15 @@
+[1]
+
+Write a CPP program for calculating the area of different geometrical shapes. (like circle, square, rectangle, cuboid)
+Note:- Create a class which takes input parameters and in that class, create some functions to calculate the area of different geometrical shapes (name of each function should be same as "Area").
+
+
+
+
+
+
+[2]
+
+Write a C++ program using hybrid inheritance, to calculate the square and cube of  numbers, where numbers are taken as input variable.
+
+Note:- Create one base class to input the number and two drive classes for calculating the square and cube.

@@ -1,0 +1,4 @@
+[1]
+
+Create a CPP program using multiple inheritance, for calculating the total mark and average mark of a student, whose roll number is given. Take roll number, Marks of maths, science, and sports as input. Print the roll number, total mark, and average mark.
+Note:- create a base class which takes roll number, marks in maths and marks in science as input. Another base class for taking sports number. A derived class, where all operation should be performed.

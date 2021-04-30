@@ -16,8 +16,8 @@ class Time{
             hour = t/(60*60);
             t = t%(60*60);
             minute = t/60;
-            // t -= minute*60;
-            second = t%minute;
+            // // t -= minute*60;
+            second = t%60;
         }
     
         string getTime(){
@@ -26,15 +26,15 @@ class Time{
                 h = "0"+h;
             }
             string m = to_string(minute);
-            if(h.length() == 1){
-                h = "0"+h;
+            if(m.length() == 1){
+                m = "0"+m;
             }
             string s = to_string(second);
             if(s.length() == 1){
                 s = "0"+s;
             }
-            string time = h + ":" + m + ":" + s;
-            return time;
+            string ftime = h + ":" + m + ":" + s;
+            return ftime;
         }
 };
 

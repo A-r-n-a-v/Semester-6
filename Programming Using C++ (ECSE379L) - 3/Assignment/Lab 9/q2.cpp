@@ -32,11 +32,11 @@ class Rectangle{
     
         bool contains(double px, double py){
             double x1, x2, y1, y2;
-            x1 = x - width/2;
-            x2 = x + width/2;
-            y1 = y - height/2;
-            y2 = y + height/2;
-            if(px>x1 && px<x2 && py>y1 && py<y2){
+            x1 = x - width/2.0;
+            x2 = x + width/2.0;
+            y1 = y - height/2.0;
+            y2 = y + height/2.0;
+            if(px>=x1 && px<=x2 && py>=y1 && py<=y2){
                 return true;
             }
             return false;
@@ -53,10 +53,10 @@ int main()
     Rectangle r1;
     cout << r1.getPerimeter() << endl;
     cout << r1.getArea() << endl;
-    cout << r1.contains(0.5, 0.1) << endl;
+    cout << boolalpha << r1.contains(0.5, 0.1) << endl;
     
     Rectangle r2(x_, y_, w, h);
     cout << r2.getPerimeter() << endl;
     cout << r2.getArea() << endl;
-    cout << r2.contains(px, py);
+    cout << boolalpha << r2.contains(px, py);
 }

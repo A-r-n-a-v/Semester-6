@@ -1,45 +1,66 @@
 #include <iostream>
+
 using namespace std;
 
-class Numbers{
-public:
-    int num;
-    Numbers(int num){
-        this->num=num;
-    }
-    
-    virtual int compute()=0;
-};
 
-class Square: public Numbers{
+class Complex{
 public:
-    Square(int num): Numbers(num){}
-    
-    int compute(){
-        return num*num;
-    }
-};
+  float real;
+  float imgnry;
 
-class Cube: public Numbers{
-public:
-    Cube(int num): Numbers(num){}
+  Complex(){
+    this->real = 0.0;
+    this->imgnry = 0.0;
+  }
+
+  Complex(float real, float imgnry){
+    this->real = real;
+    this->imgnry = imgnry;
+  }
+
+  Complex operator+(const Complex &obj){
+    Complex temp;
+    temp.imgnry = this->imgnry + obj.imgnry;
+    temp.real = this->real + obj.real;
+    return temp;
+  }
+
+  Complex operator-(const Complex &obj){
+    Complex temp;
+    temp.imgnry = this->imgnry - obj.imgnry;
+    temp.real = this->real - obj.real;
+    return temp;
+  }
+
+  void display(){
+    cout << this->real << "+" << this->imgnry << "i" << endl;
+  }
     
-    int compute(){
-        return num*num*num;
-    }
 };
-int main(){
-    int a, b;
-    cin>> a >> b;
+ 
+int main()
+{
+    Complex num1, num2, temp;
+    float r, i;
+    cin >> r >> i;
+
+    num1.real = r;
+    num1.imgnry = i;
+    cin >> r >> i;
     
-    Numbers *n;
-    Square s(a);
-    Cube c(b);
+    num2.real = r;
+    num2.imgnry = i;
+    cout << "Input Values:" << endl;
     
-    n = &s;
-    cout<< "Square is: " << n->compute() << endl;
-    n=&c;
-    cout<< "Cube is: " << n->compute() << endl;
+    num1.display();
+    num2.display();
+    cout << "Result:" << endl;
+    
+    temp = num1 + num2;
+    temp.display();
+    
+    temp = num1 - num2;
+    temp.display();
     
     return 0;
 }

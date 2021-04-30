@@ -10,6 +10,6 @@ Note:- Create a class which takes input parameters and in that class, create som
 
 [2]
 
-Write a C++ program using hybrid inheritance, to calculate the square and cube of  numbers, where numbers are taken as input variable.
+Write a CPP program using Operator Overloading  to add and subtract two complex numbers.
 
-Note:- Create one base class to input the number and two drive classes for calculating the square and cube.
+Note :- Create a class in which you have to make a function to get the complex values and use operator overloading to add and subtract the two complex numbers.
